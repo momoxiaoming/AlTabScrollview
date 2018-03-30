@@ -30,7 +30,7 @@
     //
     _clickBlock=clickBlock;
     
-    
+    _tagIndex=index;
     if(_direction==horizontal){
         
         [self updateTag:index];
@@ -123,7 +123,6 @@
             
         }
         
-        _tagIndex=index;
         
     }else{
         //获取scrollview宽度
@@ -165,7 +164,6 @@
             
         }
         
-        _tagIndex=index;
         
         
     }
@@ -177,7 +175,7 @@
  @param index 点击个tag下标
  */
 -(void)tabOffset:(NSInteger)index{
-    _tagIndex=index;
+//    _tagIndex=index;
     
     //水平滚动的时候,计算偏移量
     if(_direction==horizontal){
@@ -315,7 +313,8 @@
         [UIView animateWithDuration:0.1 animations:^{
             _tagLine.frame=CGRectMake(index*_tabWidth, _tabHeight-tagLineheight-0.5, _tabWidth, tagLineheight);
         } completion:^(BOOL finished) {
-            
+            _tagIndex=index;
+
         }];
         
     }else{
@@ -323,11 +322,12 @@
         [UIView animateWithDuration:0.1 animations:^{
             _tagLine.frame=CGRectMake(_tabWidth-tagLineheight-0.5, _tabHeight*index, tagLineheight, _tabHeight);
         } completion:^(BOOL finished) {
-            
+            _tagIndex=index;
+
         }];
         
     }
-    
+
 }
 
 /**
