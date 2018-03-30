@@ -12,4 +12,4 @@ ios 仿今日头条新闻分页,滑动分页
 
 2.关闭标题居中功能(设置10个标题)
 
-![](https://img-blog.csdn.net/2018033015001778?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzE4MzcyMzQ3/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![普通.gif](https://upload-images.jianshu.io/upload_images/1978245-300a8a9fa9212e35.gif?imageMogr2/auto-orient/strip)
